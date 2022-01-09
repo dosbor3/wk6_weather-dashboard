@@ -27,6 +27,7 @@ The application can be accessed at https://dosbor3.github.io/wk6_weather-dashboa
 *  BootStrap
 *  JQuery
 *  MomentJS
+*  OpenWeahter API
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
