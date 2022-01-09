@@ -31,7 +31,7 @@ The application can be accessed at https://dosbor3.github.io/wk6_weather-dashboa
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.  Code can be found at https://github.com/dosbor3/wk5_work-day-scheduler
+Please make sure to update tests as appropriate.  Source code can be found at https://github.com/dosbor3/wk6_weather-dashboard
 
 
 ## Image of Application 
