@@ -3,13 +3,13 @@ A weather dashboard that will run in the browser and feature dynamically updated
 
 The weather dashboard allows a user to see the weather outlook for multiple cities to assist in trip planning.  The user will be provided with a weather dashboard with form inputs.  The user will be able to search for a city and be presented with curren and future conditions for that city.  The seached city will be added to the search history.  When presented with the current weather conditions for that city the following will be displayed: 
 
-#  The city name
-#  The date
-#  An icon representation of weather conditions
-#  The temperature
-#  The humidity
-#  The wind speed
-#  The UV index
+*  The city name
+*  The date
+*  An icon representation of weather conditions
+*  The temperature
+*  The humidity
+*  The wind speed
+*  The UV index
 
 When the user views the UV index, the user will be presented with a color that indicates whether the conditions are favorable, moderate, or severe.  
 
@@ -19,7 +19,7 @@ The user will be allowed to click on a city in the search history, and be presen
 
 ## Installation
 
-The application can be accessed at https://dosbor3.github.io/wk5_work-day-scheduler/  
+The application can be accessed at https://dosbor3.github.io/wk6_weather-dashboard/  
 
 ## Usage
 
