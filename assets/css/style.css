@@ -61,6 +61,13 @@ header h1 {
     border-radius:30px;
 }
 
+.list-group {
+    padding: 10px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.75;
+  }
+
 /* CARDS */
 .card {
     margin: 15px;
