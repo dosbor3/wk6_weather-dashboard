@@ -1,28 +1,17 @@
-//variable to store a reference to the <form> element with an id of "city-form"
+
 var cityFormEl = document.querySelector("#city-form");
-
-//variable to store a reference to the <input> element with an id of city
 var cityInputEl = document.querySelector("#city");
-
-//variable to store a reference to the div element with an id of #data-container
 var dataContainerEl = document.querySelector("#data-container");
-
-//variable to store a reference to the span element with an id of #city-search-term
 var citySearchTerm = document.querySelector("#city-search-term");
-
-//variable to store a reference to current date element
 var dateEl = document.querySelector("#current-date-display");
-
-//OpenWeather API key
 var apiKey = "8d4e7337b0329ab52081ed5c7aef9126";
-
-//variable to store city history buttons
 var historyDivEl = document.querySelector("#history");
-
 var temp = "";
 var wind = "";
 var humidity = "";
 var index = "";
+var target = "";
+var newCity = "";
 
 
 
@@ -47,7 +36,6 @@ var getWeatherData = function(city) {
     fetch(apiUrl).then(function(response) {
         if (response.ok) {  
             response.json().then(function(data) {
-            console.log(data);
             displayWeatherData(data, city);
         });
         } 
@@ -109,8 +97,17 @@ var saveCities = function(city) {
    
    for (var i = 0; i < 8; i++) {
        var historyEl = document.createElement("button");
+       var name = "btn-" + i;
+       newCity = cities[i]
        historyEl.classList = "btn btn-secondary btn-outline-dark btn-lg text-white";
        historyEl.setAttribute("type", "button");
+       historyEl.setAttribute("id", name);
+       historyEl.setAttribute("data-city", city);
+       historyEl.addEventListener("click", function(event) {
+           target = this.id;
+           newCity = historyEl.getAttribute("data-city");
+           cityHistoryBtnClick(target);
+       })
        historyEl.textContent = cities[i];
 
        historyDivEl.appendChild(historyEl);
@@ -120,4 +117,12 @@ var saveCities = function(city) {
 
 };
 
-var 
+var cityHistoryBtnClick = function(target){
+    if (target) {        
+        getWeatherData(newCity);
+       
+    }
+    
+    
+};
+
