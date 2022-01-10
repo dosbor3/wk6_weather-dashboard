@@ -6,7 +6,7 @@ var apiKey = "8d4e7337b0329ab52081ed5c7aef9126";
 
 
 var getWeatherData = function(city) {   
-    var apiUrl ="api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+    var apiUrl ="https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + apiKey;
     console.log(apiUrl);
 
     fetch(apiUrl).then(function(response) {
