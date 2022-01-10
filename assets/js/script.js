@@ -118,8 +118,9 @@ var saveCities = function(city) {
 };
 
 var cityHistoryBtnClick = function(target){
-    if (target) {        
-        getWeatherData(newCity);
+    if (target) {  
+        var cityUpdateEl = document.querySelector("#" + target).textContent;
+        getWeatherData(cityUpdateEl);
        
     }
     
