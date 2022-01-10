@@ -29,12 +29,11 @@
               </div>
 
               <div class="input-group mb-3 d-grid gap-2">
-                <button class="btn btn-info btn-outline-primary btn-sm text-white" type="button" id="btn-search">Search</button>
+                <button class="btn btn-info btn-outline-primary btn-sm text-white" type="submit" id="btn-search">Search</button>
               </div>
               <hr class="dropdown-divider">
               <div>
-                <div class="btn btn-secondary btn-outline-dark btn-sm text-white" type="button" id="city-btn">
-                  <!-- Append List Elements here -->
+                <div class="input-group mb-3 d-grid gap-2" id="history">                  
                 </div>                  
               </div>
             </form> 
@@ -43,8 +42,8 @@
         <!-- Right Side Content -->       
         <div class="col">
           <div class="card">
-            <h2 id="city-forcast">Atlanta -<span id="current-date-display">(01/07/2022)</span></h2>  <!-- span element to write the search term to -->
-            <div id="repos-container" class="list-group"></div> <!-- Empty div element that we'll write all of the repository datat to -->
+            <h2 id="city-search-term"><span id="current-date-display"></span></h2>  <!-- span element to write the search term to -->
+            <div id="data-container" class="list-group"></div> <!-- Empty div element that we'll write all of the repository datat to -->
           </div>
         </div>              
     </main>
